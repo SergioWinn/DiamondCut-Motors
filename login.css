@@ -1,0 +1,506 @@
+body{
+    background-color: #2A2438;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    cursor: default;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    background-color: #5C5470;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+.leftNav{
+    width:10%;
+    margin-left: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftNav a img{
+    width: 55%;
+}
+
+.rightNav{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 25px;
+}
+
+.rightNav .textNav{
+    width: 100%;
+    justify-content: center;
+    position: relative;
+}
+
+.rightNav .textNav ul{
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+}
+
+.rightNav .textNav ul li{
+    list-style: none;
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
+    margin: 0px 7.5px;
+    padding: 2.5px;
+    width: 12.5%;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.rightNav .textNav ul li:hover{
+    cursor: pointer;
+    background-color: #DBD8E3;
+    border-radius: 5px;
+    height: 200%;
+    width: 12.5%;
+    font-weight: bold;
+}
+
+.rightNav .textNav ul li:hover a{
+    color: #2A2438;
+}
+
+.rightNav .textNav ul li a{
+    color: #DBD8E3;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.rightNav .account a{
+    color: #DBD8E3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.rightNav .account a:hover{
+    background-color: #DBD8E3;
+    color: #2A2438;
+    border-radius: 100%;
+}
+
+.menu-container{
+    display: none;
+}
+
+.content{
+    position: relative;
+    z-index: 0;
+    width: 100%;
+}
+
+.content-text{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.content-text h1{
+    color: #DBD8E3;
+    margin: 0;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.content-background{
+    position: relative;
+    width: 100%;
+    margin: 0;
+}
+
+.content-background img{
+    width: 100%;
+    height: auto;
+    max-height: 40vh;
+    object-fit: cover;
+    border-radius: 0 0 15px 15px;
+}
+
+.content-blur{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(53, 47, 68, 0.45);
+    filter: blur(5px);
+    border-radius: 0 0 15px 15px;
+}
+
+.login-form{
+    padding: 0 25px;
+    display: flex;
+    justify-content: center;
+}
+
+#loginForm{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-group{
+    padding: 10px 0;
+}
+
+.form-group label{
+    color: #DBD8E3;
+    font-size: 1em;
+    text-align: justify;
+    max-width: 100%;
+    margin: 0px 0 0 0;
+    transition: font-weight 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"]{
+    width: 100%;
+    background-color: rgba(219, 216, 227, 0.45);
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.custom-radio{
+    display: inline-flex;
+    padding: 0px 10px;
+    margin: 0;
+    justify-content: center;
+}
+
+.custom-radio-check p{
+    display: flex;
+    justify-content: center;
+}
+
+.custom-radio input{
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.custom-checkbox {
+    display: flex;
+    padding: 10px;
+}
+
+.custom-checkbox input{
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+#loginForm button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 30%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #DBD8E3;
+    cursor: pointer;
+    color: #5C5470;
+    font-size: 1em;
+    text-align: justify;
+    max-width: 100%;
+    margin: 0px 0 0 0;
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+}
+
+#loginForm button:hover{
+    font-weight: bold;
+    color: #DBD8E3;
+    background-color: #5C5470;
+}
+
+.footer{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #5C5470;
+    width: 100%;
+    margin: 0;
+    padding: 5px 0;
+}
+
+.footer h4{
+    color: #DBD8E3;
+    margin: 5px 0;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+.footer ul{
+    margin: 0;
+}
+
+.footer ul li{
+    display: inline-flex;
+    width: 5%;
+    margin: 0 5px;
+}
+
+.footer ul li a{
+    width: 100%;
+}
+
+.footer ul li a img{
+    transform: translateX(-20px);
+    width: 50%;
+}
+
+@media only screen and (max-width: 480px) {
+    .leftNav{
+        margin-left: 12.5px;
+    }
+    
+    .rightNav{
+        margin-right: 12.5px;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+    
+    .rightNav .textNav{
+        display: none;
+    }
+    
+    .rightNav .account{
+        display: none;
+    }
+
+    .menu-container {
+        display: block;
+        cursor: pointer;
+    }
+
+    .burger-menu .material-symbols-outlined {
+        font-size: 18px;
+        color: #DBD8E3;
+    }
+
+    .dropdown-content {
+        display: none;
+        opacity: 0;
+        transition: opacity 0.3s ease; 
+    }
+
+    .dropdown-content.show {
+        display: block;
+        opacity: 1;
+        position: absolute;
+        background-color: #5C5470;
+        z-index: 1;
+        text-align: center;
+        border-radius: 5px;
+        padding: 0;
+        right: 0;
+    }
+
+    .dropdown-content a {
+        display: block;
+        padding: 5px;
+        text-decoration: none;
+        color: #DBD8E3;
+        font-size: 0.5em;
+        width: auto;
+        transition: all 0.3s ease;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #DBD8E3;
+        color: #2A2438;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
+    .content-text h1{
+        font-size: 2em;
+    }
+    
+    .content-text h2{
+        font-size: 1em;
+    }
+    
+    .content-background img{
+        max-height: 25vh;
+    }
+
+    .login-form{
+        padding: 0 12.5px;
+    }
+    
+    #loginForm{
+        width: 67.5%;
+    }
+    
+    .form-group{
+        padding: 5px 0;
+    }
+    
+    .form-group label{
+        font-size: 0.5em;
+        margin-bottom: 5px;
+    }
+    
+    .form-group input[type="text"],
+    .form-group input[type="password"]{
+        padding: 5px;
+    }
+    
+    .custom-radio{
+        padding: 5px;
+    }
+    
+    .custom-checkbox {
+        padding: 5px;
+    }
+    
+    #loginForm button{
+        padding: 5px;
+        font-size: 0.5em;
+        margin-bottom: 5px;
+    }
+    
+    .footer{
+        padding: 2.5px 0;
+    }
+    
+    .footer h4{
+        margin: 2.5px 0;
+        font-size: 0.5em;
+    }
+    
+    .footer ul li{
+        width: 7.5%;
+        margin: 0 2.5px;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .leftNav{
+        margin-left: 17.5px;
+    }
+    
+    .rightNav{
+        margin-right: 17.5px;
+    }
+    
+    .rightNav .textNav ul li{
+        margin: 0px 5px;
+        padding: 1.25px;
+        width: 12.5%;
+    }
+    
+    .rightNav .textNav ul li a{
+        font-size: 0.875em;
+    }
+    
+    .content-text h1{
+        font-size: 2.25em;
+    }
+    
+    .content-text h2{
+        font-size: 1.375em;
+    }
+    
+    .content-background img{
+        max-height: 25vh;
+    }
+
+    .login-form{
+        padding: 0 17.5px;
+    }
+    
+    #loginForm{
+        width: 56.25%;
+    }
+    
+    .form-group{
+        padding: 7.5px 0;
+    }
+    
+    .form-group label{
+        font-size: 0.75em;
+        margin-bottom: 7.5px;
+    }
+    
+    .form-group input[type="text"],
+    .form-group input[type="password"]{
+        padding: 7.5px;
+    }
+    
+    .custom-radio{
+        padding: 7.5px;
+    }
+    
+    .custom-checkbox {
+        padding: 7.5px;
+    }
+    
+    #loginForm button{
+        padding: 7.5px;
+        font-size: 0.75em;
+        margin-bottom: 7.5px;
+    }
+    
+    .footer{
+        padding: 3.75px 0;
+    }
+    
+    .footer h4{
+        margin: 3.75px 0;
+        font-size: 0.75em;
+    }
+    
+    .footer ul li{
+        width: 8.75%;
+        margin: 0 3.75px;
+    }
+    
+    .footer ul li a{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .footer ul li a img{
+        width: 50%;
+        align-self: center;
+    }
+    
+}
