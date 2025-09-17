@@ -15,7 +15,11 @@ In this project, I focused on several key HCI principles:
 ---
 
 ## Project Showcase (Screenshots)
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ad7d3682-36c1-42ed-beaf-a2889a386718" />
+<img width="1236" height="710" alt="image" src="https://github.com/user-attachments/assets/e13166f1-7c13-4bba-a317-ce72d659f96a" />
+<img width="573" height="793" alt="image" src="https://github.com/user-attachments/assets/65950fb8-70d4-474d-97be-5c2e7911c623" />
+<img width="398" height="803" alt="image" src="https://github.com/user-attachments/assets/ca91bdfb-bee7-4acc-8fd3-064bbb175ef7" />
+
+
 
 
 
