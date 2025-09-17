@@ -27,8 +27,8 @@ In this project, I focused on several key HCI principles:
 
 ## Technologies Used 💻
 * **Structure:** HTML5
-* **Styling:** CSS3 (Mention if you used Flexbox, Grid, or a framework like Bootstrap/Tailwind)
-* **Interactivity:** JavaScript (ES6)
+* **Styling:** CSS3
+* **Interactivity:** JavaScript
 
 ---
 
