@@ -1,7 +1,7 @@
 # DiamondCut Motors 🚗 - An Interaction Design Project
 
 ## Project Description
-DiamondCut Motors is an interface prototype for a car dealership website, designed with a focus on Human-Computer Interaction (HCI) principles. This project aims to create an intuitive, efficient, and visually pleasing user experience. It is built entirely using front-end technologies.
+DiamondCut Motors is an interface prototype for a car dealership website, designed with a focus on Human and Computer Interaction (HCI) principles. This project aims to create an intuitive, efficient, and visually pleasing user experience. It is built entirely using front-end technologies.
 
 ---
 
@@ -15,10 +15,8 @@ In this project, I focused on several key HCI principles:
 ---
 
 ## Project Showcase (Screenshots)
-*(This section is **extremely important** for a UI/UX project. Show off your best designs!)*
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ad7d3682-36c1-42ed-beaf-a2889a386718" />
 
-
-*Responsive Design Across Devices*
 
 
 ---
